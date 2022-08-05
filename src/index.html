@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Time Travel"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<img class="decoration decoration__top" src="@img/decorations/top.svg" alt="top elem">
+			<section class="intro">
+				<div class="intro__container">
+					<div class="intro__body">
+						<div class="intro__text">
+							<h1 class="intro__title title">Your most exciting journey begins here</h1>
+							<p class="intro__subtitle">
+								Check exercise details, read description and watch the
+								instructional video if you are stuck with unfamiliar exercise.
+							</p>
+							<form data-dev class="intro__form form" method="post" action="#">
+								<input data-required="email" type="email" placeholder="Your Email"
+									class="intro__email form__input">
+								<button type="submit" class="intro__button form__button">start free</button>
+							</form>
+						</div>
+						<div class="intro__images images-intro">
+							<div class="images-intro__wrapper">
+								<div class="images-intro__image images-intro__1"><img src="@img/intro/1.png"
+										alt="image №1"></div>
+								<div class="images-intro__image images-intro__2"><img src="@img/intro/2.png"
+										alt="image №2"></div>
+								<div class="images-intro__image images-intro__3"><img src="@img/intro/3.png"
+										alt="image №3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
